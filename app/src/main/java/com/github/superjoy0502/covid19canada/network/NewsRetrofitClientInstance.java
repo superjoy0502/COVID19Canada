@@ -16,29 +16,30 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada.ui.main;
+package com.github.superjoy052.covid19canada.network;
 
-import androidx.arch.core.util.Function;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Transformations;
-import androidx.lifecycle.ViewModel;
+import java.util.concurrent.TimeUnit;
 
-public class PageViewModel extends ViewModel {
+import okhttp3.OkHttpClient;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
-    private MutableLiveData<Integer> mIndex = new MutableLiveData<>();
-    private LiveData<String> mText = Transformations.map(mIndex, new Function<Integer, String>() {
-        @Override
-        public String apply(Integer input) {
-            return "Hello world from section: " + input;
+public class NewsRetrofitClientInstance {
+
+    private static final String BASE_URL = "https://canadacovid19server.run-us-west2.goorm.io/";
+    private static Retrofit retrofit;
+
+    public static Retrofit getRetrofitInstance() {
+        OkHttpClient client = new OkHttpClient.Builder()
+                .connectTimeout(100, TimeUnit.SECONDS)
+                .readTimeout(100, TimeUnit.SECONDS).build();
+        if (retrofit == null) {
+            retrofit = new Retrofit.Builder()
+                    .baseUrl(BASE_URL)
+                    .client(client)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
         }
-    });
-
-    public void setIndex(int index) {
-        mIndex.setValue(index);
-    }
-
-    public LiveData<String> getText() {
-        return mText;
+        return retrofit;
     }
 }

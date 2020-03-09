@@ -16,22 +16,32 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada;
+package com.github.superjoy0502.covid19canada;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Tab03Advice extends Fragment {
+import com.github.superjoy052.covid19canada.R;
+
+public class Tab01Updates extends Fragment {
     @Override
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.tab03advice, container, false);
+        Log.d("Tab01Updates", "onCreateView: LOG");
+        View root = inflater.inflate(R.layout.tab01updates, container, false);
         return root;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 }

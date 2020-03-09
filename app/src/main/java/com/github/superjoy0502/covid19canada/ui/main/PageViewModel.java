@@ -16,34 +16,29 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada.model;
+package com.github.superjoy052.covid19canada.ui.main;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import androidx.arch.core.util.Function;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Transformations;
+import androidx.lifecycle.ViewModel;
 
-public class COVID19VirusData {
+public class PageViewModel extends ViewModel {
 
-    @SerializedName("number")
-    @Expose
-    private Integer number;
-    @SerializedName("place")
-    @Expose
-    private String place;
+    private MutableLiveData<Integer> mIndex = new MutableLiveData<>();
+    private LiveData<String> mText = Transformations.map(mIndex, new Function<Integer, String>() {
+        @Override
+        public String apply(Integer input) {
+            return "Hello world from section: " + input;
+        }
+    });
 
-    public Integer getNumber() {
-        return number;
+    public void setIndex(int index) {
+        mIndex.setValue(index);
     }
 
-    public void setNumber(Integer number) {
-        this.number = number;
+    public LiveData<String> getText() {
+        return mText;
     }
-
-    public String getPlace() {
-        return place;
-    }
-
-    public void setPlace(String place) {
-        this.place = place;
-    }
-
 }

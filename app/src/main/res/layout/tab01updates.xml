@@ -22,7 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="Tab01Updates">
+    tools:context="com.github.superjoy0502.covid19canada.Tab01Updates">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/updates_recyclerview"

@@ -16,34 +16,17 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada.model;
+package com.github.superjoy052.covid19canada.network;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
 
-public class COVID19NewsData {
+import com.github.superjoy052.covid19canada.model.COVID19NewsData;
 
-    @SerializedName("link")
-    @Expose
-    private String link;
-    @SerializedName("title")
-    @Expose
-    private String title;
+import java.util.ArrayList;
 
-    public String getLink() {
-        return link;
-    }
+import retrofit2.Call;
+import retrofit2.http.GET;
 
-    public void setLink(String link) {
-        this.link = link;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
+public interface GetNewsDataService {
+    @GET("/news")
+    Call<ArrayList<COVID19NewsData>> getAllNews();
 }

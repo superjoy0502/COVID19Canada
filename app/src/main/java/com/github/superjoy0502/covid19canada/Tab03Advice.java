@@ -16,17 +16,24 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada.network;
+package com.github.superjoy0502.covid19canada;
 
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-import com.kimdongwoo.covid19canada.model.COVID19VirusData;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-import java.util.ArrayList;
+import com.github.superjoy052.covid19canada.R;
 
-import retrofit2.Call;
-import retrofit2.http.GET;
-
-public interface GetVirusDataService {
-    @GET("/")
-    Call<ArrayList<COVID19VirusData>> getAllCases();
+public class Tab03Advice extends Fragment {
+    @Override
+    public View onCreateView(
+            @NonNull LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.tab03advice, container, false);
+        return root;
+    }
 }

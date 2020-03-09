@@ -16,30 +16,17 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada.network;
+package com.github.superjoy052.covid19canada.network;
 
-import java.util.concurrent.TimeUnit;
 
-import okhttp3.OkHttpClient;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import com.github.superjoy052.covid19canada.model.COVID19VirusData;
 
-public class VirusRetrofitClientInstance {
+import java.util.ArrayList;
 
-    private static final String BASE_URL = "https://canadacovid19server.run-us-west2.goorm.io";
-    private static Retrofit retrofit;
+import retrofit2.Call;
+import retrofit2.http.GET;
 
-    public static Retrofit getRetrofitInstance() {
-        OkHttpClient client = new OkHttpClient.Builder()
-                .connectTimeout(100, TimeUnit.SECONDS)
-                .readTimeout(100, TimeUnit.SECONDS).build();
-        if (retrofit == null) {
-            retrofit = new retrofit2.Retrofit.Builder()
-                    .baseUrl(BASE_URL)
-                    .client(client)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-        }
-        return retrofit;
-    }
+public interface GetVirusDataService {
+    @GET("/")
+    Call<ArrayList<COVID19VirusData>> getAllCases();
 }

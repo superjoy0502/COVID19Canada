@@ -16,30 +16,34 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada;
+package com.github.superjoy052.covid19canada.model;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+public class COVID19VirusData {
 
-public class Tab01Updates extends Fragment {
-    @Override
-    public View onCreateView(
-            @NonNull LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        Log.d("Tab01Updates", "onCreateView: LOG");
-        View root = inflater.inflate(R.layout.tab01updates, container, false);
-        return root;
+    @SerializedName("number")
+    @Expose
+    private Integer number;
+    @SerializedName("place")
+    @Expose
+    private String place;
+
+    public Integer getNumber() {
+        return number;
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void setNumber(Integer number) {
+        this.number = number;
     }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+
 }

@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.kimdongwoo.covid19canada;
+package com.github.superjoy0502.covid19canada;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -25,6 +25,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+
+import com.github.superjoy052.covid19canada.R;
 
 public class Tab02News extends Fragment {
     @Override
