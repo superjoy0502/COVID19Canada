@@ -26,7 +26,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.github.superjoy052.covid19canada.R;
+import com.github.superjoy0502.covid19canada.R;
 
 public class Tab03Advice extends Fragment {
     @Override

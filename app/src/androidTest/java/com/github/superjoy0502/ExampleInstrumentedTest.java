@@ -1,4 +1,4 @@
-package com.github.superjoy052.covid19canada;
+package com.github.superjoy0502.covid19canada;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.github.superjoy052.covid19canada", appContext.getPackageName());
+        assertEquals("com.github.superjoy0502.covid19canada", appContext.getPackageName());
     }
 }

@@ -27,19 +27,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import com.github.superjoy052.covid19canada.R;
+import com.github.superjoy0502.covid19canada.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
-import com.github.superjoy052.covid19canada.adapter.NewsAdapter;
-import com.github.superjoy052.covid19canada.adapter.VirusAdapter;
-import com.github.superjoy052.covid19canada.model.COVID19NewsData;
-import com.github.superjoy052.covid19canada.model.COVID19VirusData;
-import com.github.superjoy052.covid19canada.network.GetNewsDataService;
-import com.github.superjoy052.covid19canada.network.GetVirusDataService;
-import com.github.superjoy052.covid19canada.network.NewsRetrofitClientInstance;
-import com.github.superjoy052.covid19canada.network.VirusRetrofitClientInstance;
-import com.github.superjoy052.covid19canada.ui.main.SectionsPagerAdapter;
+import com.github.superjoy0502.covid19canada.adapter.NewsAdapter;
+import com.github.superjoy0502.covid19canada.adapter.VirusAdapter;
+import com.github.superjoy0502.covid19canada.model.COVID19NewsData;
+import com.github.superjoy0502.covid19canada.model.COVID19VirusData;
+import com.github.superjoy0502.covid19canada.network.GetNewsDataService;
+import com.github.superjoy0502.covid19canada.network.GetVirusDataService;
+import com.github.superjoy0502.covid19canada.network.NewsRetrofitClientInstance;
+import com.github.superjoy0502.covid19canada.network.VirusRetrofitClientInstance;
+import com.github.superjoy0502.covid19canada.ui.main.SectionsPagerAdapter;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.github.superjoy052.covid19canada;
+package com.github.superjoy0502.covid19canada;
 
 import org.junit.Test;
 

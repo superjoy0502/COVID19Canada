@@ -28,7 +28,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.github.superjoy052.covid19canada.R;
+import com.github.superjoy0502.covid19canada.R;
 
 public class Tab01Updates extends Fragment {
     @Override

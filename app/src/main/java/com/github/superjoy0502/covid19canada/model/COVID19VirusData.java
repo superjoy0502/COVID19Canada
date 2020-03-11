@@ -15,20 +15,41 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
-
-package com.github.superjoy052.covid19canada.model;
+package com.github.superjoy0502.covid19canada.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class COVID19VirusData {
 
+    @SerializedName("cured")
+    @Expose
+    private Integer cured;
+    @SerializedName("deaths")
+    @Expose
+    private Integer deaths;
     @SerializedName("number")
     @Expose
     private Integer number;
     @SerializedName("place")
     @Expose
     private String place;
+
+    public Integer getCured() {
+        return cured;
+    }
+
+    public void setCured(Integer cured) {
+        this.cured = cured;
+    }
+
+    public Integer getDeaths() {
+        return deaths;
+    }
+
+    public void setDeaths(Integer deaths) {
+        this.deaths = deaths;
+    }
 
     public Integer getNumber() {
         return number;

@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy052.covid19canada.model;
+package com.github.superjoy0502.covid19canada.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

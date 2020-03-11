@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy052.covid19canada.adapter;
+package com.github.superjoy0502.covid19canada.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,8 +26,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.github.superjoy052.covid19canada.R;
-import com.github.superjoy052.covid19canada.model.COVID19VirusData;
+import com.github.superjoy0502.covid19canada.R;
+import com.github.superjoy0502.covid19canada.model.COVID19VirusData;
 
 import java.util.ArrayList;
 
@@ -48,7 +48,9 @@ public class VirusAdapter extends RecyclerView.Adapter<VirusAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull VirusAdapter.ViewHolder holder, int position) {
         holder.tLocation.setText(body.get(position).getPlace() + "");
-        holder.tNumber.setText(body.get(position).getNumber() + "");
+        holder.tNumber.setText("Confirmed: " + body.get(position).getNumber() + "");
+//        holder.tDeaths.setText("Deaths: " + body.get(position).getDeaths() + "");
+        holder.tCured.setText("Recovered: " + body.get(position).getCured() + "");
     }
 
     @Override
@@ -60,11 +62,15 @@ public class VirusAdapter extends RecyclerView.Adapter<VirusAdapter.ViewHolder> 
 
         public TextView tLocation;
         public TextView tNumber;
+//        public TextView tDeaths;
+        public TextView tCured;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tLocation = itemView.findViewById(R.id.location_text);
             tNumber = itemView.findViewById(R.id.number_text);
+//            tDeaths = itemView.findViewById(R.id.death_text);
+            tCured = itemView.findViewById(R.id.cured_text);
         }
     }
 }

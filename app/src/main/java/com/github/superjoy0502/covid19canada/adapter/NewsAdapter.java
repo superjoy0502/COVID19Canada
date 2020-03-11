@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy052.covid19canada.adapter;
+package com.github.superjoy0502.covid19canada.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -30,8 +30,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.github.superjoy052.covid19canada.R;
-import com.github.superjoy052.covid19canada.model.COVID19NewsData;
+import com.github.superjoy0502.covid19canada.R;
+import com.github.superjoy0502.covid19canada.model.COVID19NewsData;
 
 import java.util.ArrayList;
 
