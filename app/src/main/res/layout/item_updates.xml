@@ -62,14 +62,14 @@
                     android:textSize="18dp"
                     android:layout_marginRight="5dp"
                     android:textColor="@android:color/black"/>
-<!--                <TextView-->
-<!--                    android:id="@+id/death_text"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Death"-->
-<!--                    android:textSize="18dp"-->
-<!--                    android:layout_marginRight="5dp"-->
-<!--                    android:textColor="@android:color/holo_red_light"/>-->
+                <TextView
+                    android:id="@+id/death_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Death"
+                    android:textSize="18dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/holo_red_light"/>
                 <TextView
                     android:id="@+id/cured_text"
                     android:layout_width="wrap_content"

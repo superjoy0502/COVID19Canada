@@ -49,7 +49,7 @@ public class VirusAdapter extends RecyclerView.Adapter<VirusAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull VirusAdapter.ViewHolder holder, int position) {
         holder.tLocation.setText(body.get(position).getPlace() + "");
         holder.tNumber.setText("Confirmed: " + body.get(position).getNumber() + "");
-//        holder.tDeaths.setText("Deaths: " + body.get(position).getDeaths() + "");
+        holder.tDeaths.setText("Deaths: " + body.get(position).getDeaths() + "");
         holder.tCured.setText("Recovered: " + body.get(position).getCured() + "");
     }
 
@@ -62,14 +62,14 @@ public class VirusAdapter extends RecyclerView.Adapter<VirusAdapter.ViewHolder> 
 
         public TextView tLocation;
         public TextView tNumber;
-//        public TextView tDeaths;
+        public TextView tDeaths;
         public TextView tCured;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tLocation = itemView.findViewById(R.id.location_text);
             tNumber = itemView.findViewById(R.id.number_text);
-//            tDeaths = itemView.findViewById(R.id.death_text);
+            tDeaths = itemView.findViewById(R.id.death_text);
             tCured = itemView.findViewById(R.id.cured_text);
         }
     }
