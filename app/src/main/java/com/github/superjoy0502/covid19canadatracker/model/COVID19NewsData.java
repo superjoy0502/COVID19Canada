@@ -16,24 +16,34 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy0502.covid19canada;
+package com.github.superjoy0502.covid19canadatracker.model;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
+public class COVID19NewsData {
 
-import com.github.superjoy0502.covid19canada.R;
+    @SerializedName("link")
+    @Expose
+    private String link;
+    @SerializedName("title")
+    @Expose
+    private String title;
 
-public class Tab02News extends Fragment {
-    @Override
-    public View onCreateView(
-            @NonNull LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.tab02news, container, false);
-        return root;
+    public String getLink() {
+        return link;
     }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
 }

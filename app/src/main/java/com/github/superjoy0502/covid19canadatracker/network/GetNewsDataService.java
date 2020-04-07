@@ -16,32 +16,17 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy0502.covid19canada;
+package com.github.superjoy0502.covid19canadatracker.network;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
+import com.github.superjoy0502.covid19canadatracker.model.COVID19NewsData;
 
-import com.github.superjoy0502.covid19canada.R;
+import java.util.ArrayList;
 
-public class Tab01Updates extends Fragment {
-    @Override
-    public View onCreateView(
-            @NonNull LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        Log.d("Tab01Updates", "onCreateView: LOG");
-        View root = inflater.inflate(R.layout.tab01updates, container, false);
-        return root;
-    }
+import retrofit2.Call;
+import retrofit2.http.GET;
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+public interface GetNewsDataService {
+    @GET("/news")
+    Call<ArrayList<COVID19NewsData>> getAllNews();
 }

@@ -15,35 +15,56 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
-
-package com.github.superjoy0502.covid19canada.model;
+package com.github.superjoy0502.covid19canadatracker.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class COVID19NewsData {
+public class COVID19VirusData {
 
-    @SerializedName("link")
+    @SerializedName("cured")
     @Expose
-    private String link;
-    @SerializedName("title")
+    private Integer cured;
+    @SerializedName("deaths")
     @Expose
-    private String title;
+    private Integer deaths;
+    @SerializedName("number")
+    @Expose
+    private Integer number;
+    @SerializedName("place")
+    @Expose
+    private String place;
 
-    public String getLink() {
-        return link;
+    public Integer getCured() {
+        return cured;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    public void setCured(Integer cured) {
+        this.cured = cured;
     }
 
-    public String getTitle() {
-        return title;
+    public Integer getDeaths() {
+        return deaths;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setDeaths(Integer deaths) {
+        this.deaths = deaths;
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
     }
 
 }

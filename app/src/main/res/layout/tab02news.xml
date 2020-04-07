@@ -21,7 +21,7 @@
     android:id="@+id/tabs"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.github.superjoy0502.covid19canada.Tab02News">
+    tools:context="com.github.superjoy0502.covid19canadatracker.Tab02News">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/news_recyclerview"

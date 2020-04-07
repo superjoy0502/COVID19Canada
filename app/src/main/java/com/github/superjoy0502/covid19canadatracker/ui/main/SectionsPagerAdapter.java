@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy0502.covid19canada.ui.main;
+package com.github.superjoy0502.covid19canadatracker.ui.main;
 
 import android.content.Context;
 
@@ -26,10 +26,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.github.superjoy0502.covid19canada.R;
-import com.github.superjoy0502.covid19canada.Tab01Updates;
-import com.github.superjoy0502.covid19canada.Tab02News;
-import com.github.superjoy0502.covid19canada.Tab03Advice;
+import com.github.superjoy0502.covid19canadatracker.R;
+import com.github.superjoy0502.covid19canadatracker.Tab01Updates;
+import com.github.superjoy0502.covid19canadatracker.Tab02News;
+import com.github.superjoy0502.covid19canadatracker.Tab03Advice;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

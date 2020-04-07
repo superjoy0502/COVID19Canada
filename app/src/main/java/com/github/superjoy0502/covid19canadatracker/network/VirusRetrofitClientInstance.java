@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy0502.covid19canada.network;
+package com.github.superjoy0502.covid19canadatracker.network;
 
 import java.util.concurrent.TimeUnit;
 

@@ -16,24 +16,29 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy0502.covid19canada;
+package com.github.superjoy0502.covid19canadatracker.ui.main;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import androidx.arch.core.util.Function;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Transformations;
+import androidx.lifecycle.ViewModel;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
+public class PageViewModel extends ViewModel {
 
-import com.github.superjoy0502.covid19canada.R;
+    private MutableLiveData<Integer> mIndex = new MutableLiveData<>();
+    private LiveData<String> mText = Transformations.map(mIndex, new Function<Integer, String>() {
+        @Override
+        public String apply(Integer input) {
+            return "Hello world from section: " + input;
+        }
+    });
 
-public class Tab03Advice extends Fragment {
-    @Override
-    public View onCreateView(
-            @NonNull LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.tab03advice, container, false);
-        return root;
+    public void setIndex(int index) {
+        mIndex.setValue(index);
+    }
+
+    public LiveData<String> getText() {
+        return mText;
     }
 }

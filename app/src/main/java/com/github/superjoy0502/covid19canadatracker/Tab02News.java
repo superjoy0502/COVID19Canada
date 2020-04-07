@@ -16,30 +16,24 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy0502.covid19canada.network;
+package com.github.superjoy0502.covid19canadatracker;
 
-import java.util.concurrent.TimeUnit;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-import okhttp3.OkHttpClient;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
 
-public class NewsRetrofitClientInstance {
+import com.github.superjoy0502.covid19canadatracker.R;
 
-    private static final String BASE_URL = "https://canadacovid19server.run-us-west2.goorm.io/";
-    private static Retrofit retrofit;
-
-    public static Retrofit getRetrofitInstance() {
-        OkHttpClient client = new OkHttpClient.Builder()
-                .connectTimeout(100, TimeUnit.SECONDS)
-                .readTimeout(100, TimeUnit.SECONDS).build();
-        if (retrofit == null) {
-            retrofit = new Retrofit.Builder()
-                    .baseUrl(BASE_URL)
-                    .client(client)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-        }
-        return retrofit;
+public class Tab02News extends Fragment {
+    @Override
+    public View onCreateView(
+            @NonNull LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.tab02news, container, false);
+        return root;
     }
 }

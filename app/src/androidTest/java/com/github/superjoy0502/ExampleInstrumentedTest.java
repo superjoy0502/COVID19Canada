@@ -1,4 +1,4 @@
-package com.github.superjoy0502.covid19canada;
+package com.github.superjoy0502.covid19canadatracker;
 
 import android.content.Context;
 

@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  ******************************************************************************/
 
-package com.github.superjoy0502.covid19canada;
+package com.github.superjoy0502.covid19canadatracker;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -27,19 +27,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import com.github.superjoy0502.covid19canada.R;
+import com.github.superjoy0502.covid19canadatracker.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
-import com.github.superjoy0502.covid19canada.adapter.NewsAdapter;
-import com.github.superjoy0502.covid19canada.adapter.VirusAdapter;
-import com.github.superjoy0502.covid19canada.model.COVID19NewsData;
-import com.github.superjoy0502.covid19canada.model.COVID19VirusData;
-import com.github.superjoy0502.covid19canada.network.GetNewsDataService;
-import com.github.superjoy0502.covid19canada.network.GetVirusDataService;
-import com.github.superjoy0502.covid19canada.network.NewsRetrofitClientInstance;
-import com.github.superjoy0502.covid19canada.network.VirusRetrofitClientInstance;
-import com.github.superjoy0502.covid19canada.ui.main.SectionsPagerAdapter;
+import com.github.superjoy0502.covid19canadatracker.adapter.NewsAdapter;
+import com.github.superjoy0502.covid19canadatracker.adapter.VirusAdapter;
+import com.github.superjoy0502.covid19canadatracker.model.COVID19NewsData;
+import com.github.superjoy0502.covid19canadatracker.model.COVID19VirusData;
+import com.github.superjoy0502.covid19canadatracker.network.GetNewsDataService;
+import com.github.superjoy0502.covid19canadatracker.network.GetVirusDataService;
+import com.github.superjoy0502.covid19canadatracker.network.NewsRetrofitClientInstance;
+import com.github.superjoy0502.covid19canadatracker.network.VirusRetrofitClientInstance;
+import com.github.superjoy0502.covid19canadatracker.ui.main.SectionsPagerAdapter;
 
 import java.util.ArrayList;
 
