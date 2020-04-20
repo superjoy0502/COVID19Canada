@@ -24,38 +24,38 @@ public class COVID19VirusData {
 
     @SerializedName("cured")
     @Expose
-    private Integer cured;
+    private String cured;
     @SerializedName("deaths")
     @Expose
-    private Integer deaths;
+    private String deaths;
     @SerializedName("number")
     @Expose
-    private Integer number;
+    private String number;
     @SerializedName("place")
     @Expose
     private String place;
 
-    public Integer getCured() {
+    public String getCured() {
         return cured;
     }
 
-    public void setCured(Integer cured) {
+    public void setCured(String cured) {
         this.cured = cured;
     }
 
-    public Integer getDeaths() {
+    public String getDeaths() {
         return deaths;
     }
 
-    public void setDeaths(Integer deaths) {
+    public void setDeaths(String deaths) {
         this.deaths = deaths;
     }
 
-    public Integer getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(Integer number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

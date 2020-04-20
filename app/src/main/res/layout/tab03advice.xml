@@ -1,168 +1,168 @@
-<?xml version="1.0" encoding="utf-8"?><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  ~ Copyright (C) 2020 김동우 Dongwoo Kim (https://github.com/superjoy0502)
-  ~
-  ~ This program is free software; you can redistribute it and/or
-  ~ modify it under the terms of the GNU General Public License
-  ~ as published by the Free Software Foundation; either version 2
-  ~ of the License, or (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program; if not, write to the Free Software
-  ~ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:fillViewport="false">
+<!--<?xml version="1.0" encoding="utf-8"?>&lt;!&ndash;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--  ~ Copyright (C) 2020 김동우 Dongwoo Kim (https://github.com/superjoy0502)-->
+<!--  ~-->
+<!--  ~ This program is free software; you can redistribute it and/or-->
+<!--  ~ modify it under the terms of the GNU General Public License-->
+<!--  ~ as published by the Free Software Foundation; either version 2-->
+<!--  ~ of the License, or (at your option) any later version.-->
+<!--  ~-->
+<!--  ~ This program is distributed in the hope that it will be useful,-->
+<!--  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of-->
+<!--  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the-->
+<!--  ~ GNU General Public License for more details.-->
+<!--  ~-->
+<!--  ~ You should have received a copy of the GNU General Public License-->
+<!--  ~ along with this program; if not, write to the Free Software-->
+<!--  ~ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.-->
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&ndash;&gt;-->
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:fillViewport="false">-->
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.github.superjoy0502.covid19canadatracker.Tab03Advice">
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:id="@+id/tabs"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        tools:context="com.github.superjoy0502.covid19canadatracker.Tab03Advice">-->
 
-        <TextView
-            android:id="@+id/section_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:text="Advice from the Government"
-            android:textColor="#000000"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tabs"
-            tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintTop_creator="1" />
+<!--        <TextView-->
+<!--            android:id="@+id/section_label"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:text="Advice from the Government"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="24dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/tabs"-->
+<!--            tools:layout_constraintLeft_creator="1"-->
+<!--            tools:layout_constraintTop_creator="1" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Those who are infected with COVID-19 may have little to no symptoms. You may not know you have symptoms of COVID-19 because they are similar to a cold or flu.\nSymptoms may take up to 14 days to appear after exposure to COVID-19. This is the longest known infectious period for this disease."></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Those who are infected with COVID-19 may have little to no symptoms. You may not know you have symptoms of COVID-19 because they are similar to a cold or flu.\nSymptoms may take up to 14 days to appear after exposure to COVID-19. This is the longest known infectious period for this disease."></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="If you feel sick during travel to Canada or upon arrival, inform the flight attendant, cruise staff or a Canadian border services officer. They will decide whether you need further medical assessment by a quarantine officer.\nIf you are ill and must visit a health care professional, call ahead or tell them when you arrive that you have a respiratory illness. You may be asked to wear a mask while waiting for or receiving treatment to prevent the spread of the illness."></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="If you feel sick during travel to Canada or upon arrival, inform the flight attendant, cruise staff or a Canadian border services officer. They will decide whether you need further medical assessment by a quarantine officer.\nIf you are ill and must visit a health care professional, call ahead or tell them when you arrive that you have a respiratory illness. You may be asked to wear a mask while waiting for or receiving treatment to prevent the spread of the illness."></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="If you have travelled abroad and you develop fever, cough or difficulty breathing in the next 14 days:"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="If you have travelled abroad and you develop fever, cough or difficulty breathing in the next 14 days:"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="isolate yourself within the home as quickly as possible and\ncall your health care provider or public health authority"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="isolate yourself within the home as quickly as possible and\ncall your health care provider or public health authority"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Consult your health care provider as soon as possible if:"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Consult your health care provider as soon as possible if:"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="you are concerned about your symptoms or\nyou have a travel history to a region where severe coronaviruses are known to occur"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="you are concerned about your symptoms or\nyou have a travel history to a region where severe coronaviruses are known to occur"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Stay home if you are sick"
-            android:textColor="#000000"
-            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Stay home if you are sick"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Practise frequent hand hygiene and coughing/sneezing etiquette."
-            android:textColor="#000000"
-            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Practise frequent hand hygiene and coughing/sneezing etiquette."-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Fill your prescriptions"
-            android:textColor="#000000"
-            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Fill your prescriptions"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Stock up on essentials but avoid panic buying"
-            android:textColor="#000000"
-            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Stock up on essentials but avoid panic buying"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Fill your prescriptions"
-            android:textColor="#000000"
-            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Fill your prescriptions"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold"></TextView>-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="12dp"
-            android:layout_marginBottom="1dp"
-            android:text="Get information about COVID-19 from reliable sources."
-            android:textColor="#000000"
-            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_marginRight="12dp"-->
+<!--            android:layout_marginBottom="1dp"-->
+<!--            android:text="Get information about COVID-19 from reliable sources."-->
+<!--            android:textColor="#000000"-->
+<!--            android:textStyle="bold"></TextView>-->
 
-    </LinearLayout>
-</ScrollView>
+<!--    </LinearLayout>-->
+<!--</ScrollView>-->

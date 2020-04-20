@@ -47,8 +47,14 @@
                 android:layout_margin="2dp"
                 android:text="Title"
                 android:textSize="18dp"
-                android:textColor="@android:color/black"
-                android:textStyle="bold" />
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/source_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="source"
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

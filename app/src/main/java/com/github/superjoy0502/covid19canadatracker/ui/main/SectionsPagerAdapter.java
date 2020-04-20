@@ -29,7 +29,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import com.github.superjoy0502.covid19canadatracker.R;
 import com.github.superjoy0502.covid19canadatracker.Tab01Updates;
 import com.github.superjoy0502.covid19canadatracker.Tab02News;
-import com.github.superjoy0502.covid19canadatracker.Tab03Advice;
+//import com.github.superjoy0502.covid19canadatracker.Tab03Advice;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -55,8 +55,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return new Tab01Updates();
             case 1:
                 return new Tab02News();
-            case 2:
-                return new Tab03Advice();
+//            case 2:
+//                return new Tab03Advice();
             default:
                 return null;
         }
@@ -70,8 +70,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return "Updates";
             case 1:
                 return "News";
-            case 2:
-                return "Advices";
+//            case 2:
+//                return "Advices";
         }
         return null;
 //        return mContext.getResources().getString(TAB_TITLES[position]);
